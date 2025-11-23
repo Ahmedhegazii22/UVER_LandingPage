@@ -116,7 +116,7 @@ function Steps() {
     <section ref={sectionRef} className="container mx-auto px-5 py-20">
       <header className="flex justify-between items-center mb-14">
         <div className="work-tag flex items-center gap-3">
-          <span className="w-1.5 h-6 bg-gray-500 rounded"></span>
+          <span className="w-1.5 h-6 bg-blue-500 rounded"></span>
           <p className="text-sm font-semibold text-gray-600">How It Works</p>
         </div>
 

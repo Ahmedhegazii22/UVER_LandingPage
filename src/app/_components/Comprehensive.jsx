@@ -134,7 +134,16 @@ function Comprehensive() {
       className="comprehensive flex items-center justify-center min-h-screen w-full bg-zinc-800"
     >
       <div className="w-full max-w-7xl mx-auto p-4 lg:p-8">
-        <div className="grid grid-cols-[200px_1fr_350px] gap-12 items-center w-full">
+        <div
+          className="
+      hidden
+      md:grid
+      grid-cols-[200px_1fr_350px]
+      gap-12
+      items-center
+      w-full
+    "
+        >
           <nav className="flex flex-col space-y-3">
             {data.map((item) => (
               <p
@@ -164,6 +173,37 @@ function Comprehensive() {
 
           <div className="relative">
             <Mobile3D activeSection={activeSection} />
+          </div>
+        </div>
+
+        <div className="md:hidden flex flex-col gap-10 w-full">
+          <div className="flex justify-center w-full">
+            <Mobile3D activeSection={activeSection} />
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            <nav className="flex flex-col space-y-3 text-left">
+              {data.map((item) => (
+                <p
+                  key={item.id}
+                  className={`pl-3 border-l-3 transition-colors duration-400 ${
+                    activeSection === item.id
+                      ? "text-white font-bold border-blue-400"
+                      : "text-gray-400 hover:text-white border-transparent"
+                  }`}
+                  onClick={() => setActiveSection(item.id)}
+                >
+                  {item.label}
+                </p>
+              ))}
+            </nav>
+
+            <div className="flex flex-col space-y-5 text-left">
+              <ComprehensiveData
+                content={data[activeSection - 1].content}
+                header={data[activeSection - 1].header}
+              />
+            </div>
           </div>
         </div>
       </div>
