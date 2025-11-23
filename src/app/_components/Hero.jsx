@@ -166,7 +166,7 @@ function Hero() {
           <p className="text-lg font-semibold">TRACK</p>
         </div>
       </div>
-      <div className="absolute -bottom-32  left-1/2 tracking-[15rem] -translate-x-1/2 text-gray-200 text-[320px] font-extrabold -z-10 select-none">
+      <div className="absolute -bottom-10 sm:-bottom-14 md:-bottom-20 left-1/2 -translate-x-1/2 text-gray-200 font-extrabold select-none -z-10 text-[100px] sm:text-[150px] md:text-[200px] lg:text-[300px] xl:text-[320px] tracking-[1rem] sm:tracking-[2rem] md:tracking-[4rem] lg:tracking-[8rem] xl:tracking-[12rem]">
         UVER
       </div>
     </section>
