@@ -15,13 +15,6 @@ export const metadata = {
   title: "UVER ",
   description:
     "UVER is a modern mobile app that helps future students explore universities, compare programs, and send applications easily and on time.",
-  keywords: ["university search", "college application", "student app", "UVER"],
-  openGraph: {
-    title: "UVER – University Search & Application App",
-    description:
-      "Explore universities, compare programs, and apply with ease using UVER.",
-    url: "https://uver-silk.vercel.app/",
-  },
 };
 
 export default function RootLayout({ children }) {
