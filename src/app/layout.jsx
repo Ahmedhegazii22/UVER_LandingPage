@@ -12,9 +12,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "UVER ",
+  title: "UVER – Explore & Apply to Universities Easily",
   description:
-    "UVER is a modern mobile app that helps future students explore universities, compare programs, and send applications easily and on time.",
+    "UVER is a modern platform that helps future students explore universities, compare academic programs, and apply with ease and at the right time.",
+  keywords: [
+    "UVER",
+    "universities",
+    "university finder",
+    "study abroad",
+    "apply to universities",
+    "compare programs",
+    "higher education",
+  ],
+  openGraph: {
+    title: "UVER – Explore & Apply to Universities Easily",
+    description:
+      "Discover universities, compare programs, and apply effortlessly using UVER.",
+    url: "https://uver-landing-page-smoky.vercel.app/",
+    siteName: "UVER",
+
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
